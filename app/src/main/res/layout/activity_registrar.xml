@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:elevation="4dp"
+        android:background="@drawable/fondo"
+        >
+
+        <TextView
+            android:id="@+id/lbtitle"
+            android:layout_width="335dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="10dp"
+            android:text="Registro"
+            android:textAlignment="center"
+            android:textColor="#050505"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_round"
+
+            android:hint="Ingresar Nombre" />
+        <EditText
+            android:id="@+id/correo"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:hint="Correo"
+            />
+
+        <EditText
+            android:id="@+id/apellido"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:hint="contraseña"
+            />
+
+        <EditText
+            android:id="@+id/edad"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_round"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Edad"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/institucion"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_round"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Institucion"
+            />
+
+        <RadioGroup
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/alumno"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:text="alumno"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="director"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/siguiente"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/boton_round"
+            android:text="Registrar" />
+        <Button
+            android:id="@+id/regresar"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/boton_round"
+            android:text="Regresar" />
+    </LinearLayout>
+</LinearLayout>

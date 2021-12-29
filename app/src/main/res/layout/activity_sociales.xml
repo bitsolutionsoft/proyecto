@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/social"
+    android:orientation="vertical"
+    tools:context=".Sociales">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#400A0A0A"
+        >
+        <TextView
+            android:id="@+id/txtArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Lógica"
+            android:textColor="#fff"
+            android:textStyle="italic|bold"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:id="@+id/txtPregunta"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="¿Que paso ayer en Quetzaltenango de 6 a 7?"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/respuesta1"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton_round"
+            android:onClick="respuesta"
+            android:text="A: una hora"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/respuesta2"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold|italic"
+            android:background="@drawable/boton_round"
+            android:onClick="respuesta"
+            android:text="B: un carro"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/respuesta3"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:onClick="respuesta"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:background="@drawable/boton_round"
+            android:text="C: un bus"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/respuesta4"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="respuesta"
+            android:textColor="#fff"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:background="@drawable/boton_round"
+            android:text="D: no lo se"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>

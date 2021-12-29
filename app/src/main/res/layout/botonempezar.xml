@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Empezar de Nuevo"
+        android:layout_margin="8dp"
+        android:background="@drawable/boton_round"
+        android:onClick="empezarDeNuevo"
+        android:textColor="#000720"
+        android:textSize="16sp"
+        android:textStyle="italic|bold"
+
+        />
+
+</LinearLayout>
